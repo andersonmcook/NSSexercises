@@ -2,6 +2,9 @@ var colors = ["Blue", "Red", "Orange", "Purple", "Hazel", "Aquamarine", "Periwin
 var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"];
 
 
+
+
+
 var hohohoElement = document.getElementById("coloredReindeer");
 
 /*
