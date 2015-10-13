@@ -85,4 +85,60 @@ for (var i =0; i < scores.length; i++) {
 console.log("The highest grade is " + highestGrade);
 console.log("The lowest grade is " + lowestGrade);
 
+// Steve's code below
+console.log("Steve's code is below");
+
+var currentScore,
+		highestScore = 0,
+		lowestScore = 101,
+		gradeA=[],
+		gradeB=[],
+		gradeC=[],
+		gradeD=[],
+		gradeF=[];
+
+for (var i = 0; i < scores.length; i++) {
+	currentScore = scores[i];
+
+	if (currentScore > highestScore) {
+		highestScore = currentScore;
+	}
+
+	if (currentScore < lowestScore) {
+		lowestScore = currentScore;
+	}
+
+
+switch (true) {
+	case (currentScore < 61):
+		gradeF.push(currentScore);
+		break;
+	case (currentScore > 60 && currentScore < 71):
+		gradeD.push(currentScore);
+		break;
+	case (currentScore > 70 && currentScore < 81):
+		gradeC.push(currentScore);
+		break;
+	case (currentScore > 80 && currentScore < 91):
+		gradeB.push(currentScore);
+		break;
+	case (currentScore > 90):
+		gradeA.push(currentScore);
+		break;
+	}
+}
+
+console.log("There are " + gradeA.length + " A's");
+console.log("There are " + gradeB.length + " B's");
+console.log("There are " + gradeC.length + " C's");
+console.log("There are " + gradeD.length + " D's");
+console.log("There are " + gradeF.length + " F's");
+console.log("The highest grade is " + highestScore);
+console.log("The lowest grade is " + lowestScore);
+
+
+
+
+
+
 
