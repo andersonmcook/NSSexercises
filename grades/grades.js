@@ -57,9 +57,30 @@ for (var i=0; i < scores.length; i++) {
 	}
 } 
 
-console.log("There are " + scoreA.length + " A's");
-console.log("There are " + scoreB.length + " B's");
-console.log("There are " + scoreC.length + " C's");
-console.log("There are " + scoreD.length + " D's");
-console.log("There are " + scoreF.length + " F's");
+console.log("There are " + scoreA.length + " A's" + " and they are " + scoreA);
+console.log("There are " + scoreB.length + " B's" + " and they are " + scoreB);
+console.log("There are " + scoreC.length + " C's" + " and they are " + scoreC);
+console.log("There are " + scoreD.length + " D's" + " and they are " + scoreD);
+console.log("There are " + scoreF.length + " F's" + " and they are " + scoreF);
+
+score = scores.sort();
+console.log("score array sorted",score);
+
+var highestGrade = score[score.length - 1];
+var lowestGrade = score[0];
+
+
+/*
+for (var i =0; i < scores.length; i++) {
+	if (scores[i] > (scores[i+1] && 90)) {
+		highestGrade = scores[i];
+	} else if (scores[i] < scores[i+1]) {
+		lowestGrade = scores[i];
+	}
+}
+*/
+
+console.log("The highest grade is " + highestGrade);
+console.log("The lowest grade is " + lowestGrade);
+
 
