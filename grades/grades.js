@@ -67,7 +67,9 @@ score = scores.sort();
 console.log("score array sorted",score);
 
 var highestGrade = score[score.length - 1];
+console.log("highestGrade", highestGrade);
 var lowestGrade = score[0];
+console.log("lowestGrade", lowestGrade);
 
 
 /*
