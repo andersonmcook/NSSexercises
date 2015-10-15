@@ -10,6 +10,9 @@
   Note: document.write() is a fast way to put content into the DOM 
   without the need for a getElementById() and innerHTML.
 */
+/*var testString = "A car, a man, a maraca";
+
+document.write("<div>" + testString + "</div>");
 
 function reversal(origString) {
   var reversedString = origString.split("").reverse().join("");
@@ -37,8 +40,47 @@ function palindrome(origString) {
 }
 
 
-var testString = "A car, a man, a maraca";
 
 reversal(testString);
 alphabits(testString);
-palindrome(testString);
+palindrome(testString);*/
+
+/*
+var Car = {
+	make: "Nissan",
+	wheels: 4,
+	model: "Xterra",
+	options: {
+		ac: true,
+		bulletProof: false,
+		underlighting: false,
+		spinners: true
+	}
+};
+console.log(Car.options.spinners);
+*/
+
+function add(one, two) {
+	return one + two;
+}
+
+var result = add(1, 2);
+console.log("result", result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
