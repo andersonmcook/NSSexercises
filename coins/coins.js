@@ -14,6 +14,8 @@ var Coins = {
 	quarter: 25
 };
 
+var results = document.getElementById("results");
+
 function coinCounter (money) { // Initialize a JavaScript object to hold the coins var coinPurse = {};
  
 var coinPurse = {
@@ -39,12 +41,15 @@ coinPurse.pennies = Math.round((((remainder2 /Coins.nickel) - Math.floor(remaind
 console.log("coinPurse.pennies", coinPurse.pennies);
 
 console.log("coinPurse", coinPurse);
-console.log("There are " + coinPurse.quarters + " quarter(s), " + coinPurse.dimes + " dime(s), " 
-	+ coinPurse.nickels + " nickel(s), and " + coinPurse.pennies + " pennies in " + money + " cents.");
+results.innerHTML += "<div>There are " + coinPurse.quarters + " quarter(s), " + coinPurse.dimes + " dime(s), " 
+	+ coinPurse.nickels + " nickel(s), and " + coinPurse.pennies + " pennies in " + money + " cents.</div>";
 
 };
 
 coinCounter(100);
+coinCounter(89);
+coinCounter(24);
+coinCounter(999);
 
 
 
