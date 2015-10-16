@@ -19,15 +19,20 @@
 
 var tree = function(height) {
   var asterisks = [];
+  var spaces = [];
 
   for (var i = 1; i <= (height * height); i++){
   asterisks.push("*");
+  spaces.push("/");
 }
   asterisks = asterisks.join("");
+  spaces = spaces.join("");
   console.log("asterisks", asterisks);
+  console.log("spaces", spaces);
 
   for (var i = 1; i < height * 2; i += 2) {
-    console.log(asterisks.slice(0 , (asterisks.length + i  - (asterisks.length))));
+    console.log(spaces.slice(0, ((height - 1 + height) - i)) +
+     (asterisks.slice(0 , (asterisks.length + i  - (asterisks.length)))));
   }
 };
 
