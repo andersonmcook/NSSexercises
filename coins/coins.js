@@ -49,7 +49,9 @@ results.innerHTML += "<div>There are " + coinPurse.quarters + " quarter(s), " + 
 coinCounter(100);
 coinCounter(89);
 coinCounter(24);
-coinCounter(999);
+coinCounter(15);
+coinCounter(41);
+coinCounter(82);
 
 
 
