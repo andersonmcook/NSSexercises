@@ -54,6 +54,28 @@ coinCounter(41);
 coinCounter(82);
 
 
+//Mathew's solution
+/*
+function coinCounter (money) { // Initialize a JavaScript object to hold the coins var coinPurse = {};
+    coinPurse = {};
+    var cents = money * 100;
+
+    coinPurse.quarters = Math.floor(cents / 25);
+    cents = cents % 25;
+
+    coinPurse.dimes = Math.floor(cents / 10)
+    cents = cents % 10;
+
+    coinPurse.nickels = Math.floor(cents / 5)
+
+    coinPurse.pennies = cents % 5;
+    return coinPurse; 
+}
+
+var coins = coinCounter(13.24);
+
+console.log("Coin", coins);
+*/
 
 
 
