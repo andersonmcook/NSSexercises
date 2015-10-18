@@ -83,8 +83,6 @@ var returnDegrees = function () {
   } 
 }
 
-var enter = function () {}
-
 //listen to converter button and run returnDegrees when clicked
 converterButton.addEventListener("click", returnDegrees);
 
