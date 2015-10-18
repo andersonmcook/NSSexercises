@@ -67,7 +67,7 @@ var colorChangeToCel = function () {
 
 // listen to inputTemp
 var returnDegrees = function () {
-  clearResult();
+  reset();
   if (fahrRadio.checked === true) {
     // run toFahrenheit on the input
     var returnFahrenheit = toFahrenheit(inputTemp.value);
@@ -83,19 +83,33 @@ var returnDegrees = function () {
   } 
 }
 
+var enter = function () {}
 
 //listen to converter button and run returnDegrees when clicked
 converterButton.addEventListener("click", returnDegrees);
-//converterButton.addEventListener("click", colorChange);
 
-// function to clear result
-var clearResult = function () {
+//listen for enter key to be pressed in input box
+inputTemp.addEventListener("keydown", function (e) {
+  if (e.keyCode === 13) {
+    returnDegrees();
+  }
+});
+
+// function to reset result
+var reset = function () {
   result.innerHTML = "";
   result.className = "";
 }
 
-// clears result when clear button is pressed
-clearButton.addEventListener("click", clearResult);
+//function to clear input and result
+var clear = function () {
+  inputTemp.value = "";
+  result.innerHTML = "";
+  result.className = "";
+}
+
+// clears input and result when clear button is pressed
+clearButton.addEventListener("click", clear);
 
 
 
