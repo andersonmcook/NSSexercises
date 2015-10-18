@@ -13,3 +13,12 @@
 .default {
 	color: black;
 }
+
+#input-temp, #result {
+	display: block;
+	font-size: 2em;
+}
+
+label {
+	display: block;
+}
