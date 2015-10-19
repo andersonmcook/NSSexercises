@@ -81,6 +81,7 @@ var returnDegrees = function () {
     result.innerHTML = Math.round(returnCelsius);
     colorChangeToCel();
   } 
+  inputTemp.focus();
 }
 
 //listen to converter button and run returnDegrees when clicked
